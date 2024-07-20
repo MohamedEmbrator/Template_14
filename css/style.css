@@ -74,11 +74,6 @@ a {
 .scroll:hover {
   background-color: var(--second-color);
 }
-@media (max-width: 450px) {
-  .scroll {
-    display: none !important;
-  }
-}
 .scroll-height {
   position: fixed;
   left: 0;
@@ -719,11 +714,17 @@ header .container .navigation ul.show {
   font-weight: 700;
 }
 @media (max-width: 767px) {
+  .skills .container .card {
+    padding: 15px;
+  }
   .skills .container .card .content > h3 {
-    font-size: 20px;
+    font-size: 30px;
   }
   .skills .container .card .icon {
-    font-size: 50px;
+    font-size: 75px;
+  }
+  .skills .container .card:hover {
+    transform: scale(1.05);
   }
 }
 /* End Skills  */
